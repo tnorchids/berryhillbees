@@ -1,0 +1,68 @@
+[
+  {
+    "name": "homeHives",
+    "source": "bhb-beta/src/assets/images/home/originals/bhbhives.JPG",
+    "widths": [400, 640, 960, 1200, 1600, 2400],
+    "largestBytes": 1108648
+  },
+  {
+    "name": "bigHives",
+    "source": "bhb-beta/src/assets/images/bees/originals/big-ole-hives.JPG",
+    "widths": [400, 640, 960, 1200, 1600, 2400],
+    "largestBytes": 665086
+  },
+  {
+    "name": "italians",
+    "source": "bhb-beta/src/assets/images/bees/originals/italians.JPG",
+    "widths": [400, 640, 960, 1200],
+    "largestBytes": 502164
+  },
+  {
+    "name": "activity",
+    "source": "bhb-beta/src/assets/images/bees/originals/bee-activity.JPG",
+    "widths": [400, 640, 960, 1200],
+    "largestBytes": 215854
+  },
+  {
+    "name": "watching",
+    "source": "bhb-legacy/images/bees/granolas-ls.png",
+    "widths": [400, 640, 960, 1024],
+    "largestBytes": 69392
+  },
+  {
+    "name": "firstHives",
+    "source": "bhb-legacy/images/about/bhb-starting-out.png",
+    "widths": [400, 640, 960, 1024],
+    "largestBytes": 277798
+  },
+  {
+    "name": "dadsHives",
+    "source": "bhb-legacy/images/about/dad-bees.png",
+    "widths": [400, 640],
+    "largestBytes": 55244
+  },
+  {
+    "name": "flipTopHoney",
+    "source": "bhb-beta/src/assets/images/products/originals/flip-top-honey-01.JPG",
+    "widths": [400, 640, 960, 1200],
+    "largestBytes": 128810
+  },
+  {
+    "name": "muthHoney",
+    "source": "bhb-beta/src/assets/images/products/originals/muth-honey-01.JPG",
+    "widths": [400, 640, 960, 1200],
+    "largestBytes": 63732
+  },
+  {
+    "name": "honeyCream",
+    "source": "bhb-beta/src/assets/images/products/originals/honey-cream-01.png",
+    "widths": [400, 640, 960, 1024],
+    "largestBytes": 119058
+  },
+  {
+    "name": "lipBalm",
+    "source": "bhb-beta/src/assets/images/products/originals/lipbalm-01.png",
+    "widths": [400, 640, 960, 1011],
+    "largestBytes": 96238
+  }
+]
