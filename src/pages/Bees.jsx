@@ -1,17 +1,25 @@
 import { photos } from '../data/photos.js';
 import ResponsiveImage from '../components/ResponsiveImage.jsx';
 
-const { bigHives: hives, italians, watching, activity } = photos;
+const {
+  bigHives: hives,
+  italians,
+  watching,
+  activity,
+  beesOnFrames,
+  winterHives
+} = photos;
 
-function BeePhoto({ src, alt, caption, eager = false }) {
+function BeePhoto({ src, alt, caption, eager = false, sizes }) {
   return (
     <figure className='min-w-0'>
       <ResponsiveImage
         src={src}
         sizes={
-          src === italians || src === activity
+          sizes ??
+          (src === italians || src === activity
             ? '(min-width: 1232px) 564px, (min-width: 640px) calc((100vw - 104px) / 2), calc(100vw - 48px)'
-            : undefined
+            : undefined)
         }
         alt={alt}
         loading={eager ? 'eager' : 'lazy'}
@@ -110,6 +118,41 @@ export default function Bees() {
           alt='A row of honeybees peeking out between the hive frames'
           caption="Sometimes the bees just sit and watch me when I'm checking the hive. See them lined up between the frames."
         />
+      </section>
+
+      <section
+        aria-labelledby='seasons-heading'
+        className='border-t border-line py-10 sm:py-14'
+      >
+        <div className='mb-8 max-w-2xl'>
+          <p className='mb-3 text-xs uppercase tracking-[0.2em] text-muted'>
+            Around the apiary
+          </p>
+          <h2
+            id='seasons-heading'
+            className='font-serif text-3xl tracking-tight sm:text-4xl'
+          >
+            A hive through the seasons.
+          </h2>
+          <p className='mt-4 text-base leading-8 text-muted'>
+            Some days bring a hive full of activity. Others bring a blanket of
+            snow. Here are two very different views of life with our bees.
+          </p>
+        </div>
+        <div className='grid items-start gap-8 sm:grid-cols-2 sm:gap-6'>
+          <BeePhoto
+            src={beesOnFrames}
+            sizes='(min-width: 1232px) 564px, (min-width: 640px) calc((100vw - 104px) / 2), calc(100vw - 48px)'
+            alt='Honeybees covering the tops of wooden hive frames, with trees and water in the background'
+            caption='A closer look across the frames during a hive inspection.'
+          />
+          <BeePhoto
+            src={winterHives}
+            sizes='(min-width: 1232px) 564px, (min-width: 640px) calc((100vw - 104px) / 2), calc(100vw - 48px)'
+            alt='Colorful beehives and surrounding trees covered in a thick layer of snow'
+            caption='A quieter view of the apiary under a blanket of snow.'
+          />
+        </div>
       </section>
 
       <section

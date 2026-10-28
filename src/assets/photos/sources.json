@@ -1,5 +1,29 @@
 [
   {
+    "name": "beesOnFrames",
+    "source": "bhb-new/photo-sources/bees-on-frames.jpeg",
+    "widths": [400, 640, 960, 1200],
+    "largestBytes": 313794
+  },
+  {
+    "name": "winterHives",
+    "source": "bhb-new/photo-sources/winter-hives.jpeg",
+    "widths": [400, 640, 960, 1200],
+    "largestBytes": 247872
+  },
+  {
+    "name": "cappedHoney",
+    "source": "bhb-new/photo-sources/capped-honey.jpeg",
+    "widths": [400, 640, 960, 1200],
+    "largestBytes": 740222
+  },
+  {
+    "name": "geffIvey",
+    "source": "bhb-new/photo-sources/geff-ivey.jpeg",
+    "widths": [400, 640, 960, 1200],
+    "largestBytes": 185278
+  },
+  {
     "name": "homeHives",
     "source": "bhb-beta/src/assets/images/home/originals/bhbhives.JPG",
     "widths": [400, 640, 960, 1200, 1600, 2400],

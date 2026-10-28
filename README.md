@@ -6,12 +6,36 @@ with the original logo, Mate font, and optimized photographs.
 Navigation uses standard links. Additional pages can be added in `src/pages/`
 and registered in `src/App.jsx`.
 
+Legacy hash bookmarks such as `/#/about` automatically redirect to `/about`
+before React renders. The old `/#/purchase` route maps to `/buyonline`. Query
+parameters and section anchors are preserved; normal anchors are unaffected.
+The redirect replaces browser history so Back doesn't loop through the old URL.
+Fragments aren't sent to the server, so this compatibility step runs in the
+browser. Old routes without a replacement page still reach the not-found view.
+
 Page titles and search descriptions live in `src/data/pageMetadata.js`. Add an
 entry there when adding a route. `PageMetadata` updates browser metadata and
 marks unknown routes `noindex`. The build also generates an HTML entry point for
 each known route so metadata is available without JavaScript. Page content is
 still rendered by React; this is not full server-side rendering. Vite development
 uses the browser metadata, while production output includes the static tags.
+
+SEO build output includes canonical links, `sitemap.xml` with all eight public
+pages, and `robots.txt` pointing to the sitemap. The thank-you page is excluded
+from the sitemap but remains crawlable so its `noindex` directive can be read.
+Homepage JSON-LD identifies the Organization and WebSite, with the established
+Facebook profile. `src/data/site.js` defines the production domain and identity.
+No storefront address, opening hours, reviews, or other unverified details are
+published in structured data. Future deployment to a different canonical domain
+requires updating that file.
+
+After launch, verify the domain in Google Search Console, submit
+`https://berryhillbees.com/sitemap.xml`, and inspect the homepage and important
+pages to confirm Google can render them. Staging/preview deployments should be
+access-protected or configured `noindex` separately; a production canonical alone
+does not keep a preview out of search. Sitelinks are selected automatically by
+Google, not enabled by a markup switch. These changes support discovery and site
+identity but do not guarantee a particular search appearance or ranking.
 
 Updates (`/updates`) are maintained in `src/data/updates.js`. The homepage shows
 the latest visible post; the navigation and recent posts show a New badge for
@@ -84,6 +108,15 @@ Confirm catalog values and merchant shipping settings before publishing.
 Checkout requires the merchant's live PayPal configuration; a local build does
 not verify payments or shipping charges.
 
+The PayPal return page is `/buyonline/thankyou`, matching the legacy route
+(including `/#/buyonline/thankyou` via bookmark compatibility). It is omitted
+from navigation and marked `noindex`. Cart forms set this as their return URL,
+use GET without payment variables (`rm=1`), and return cancellations to the shop.
+The origin comes from the deployed site; test checkout on the intended domain.
+The page is a thank-you and next-steps message, not payment verification.
+PayPal receipt/account status remains authoritative. Confirm the merchant's
+Auto Return settings and complete a checkout test before publishing.
+
 Requires Node.js 22.12+ (Node.js 24 recommended).
 
 ```sh
@@ -122,6 +155,13 @@ untouched source photos from the sibling `bhb-beta` and `bhb-legacy` directories
 corrects EXIF orientation, applies the documented hive crops, and uses Lanczos
 resizing. Source paths and output widths are recorded in
 `src/assets/photos/sources.json`; `src/data/photos.js` is generated automatically.
+The About-page beekeeper portrait uses the supplied `IMG_6171.jpeg`, preserved
+as `photo-sources/geff-ivey.jpeg`. Responsive WebP versions use the full frame;
+the source file is not copied into the production build.
+Additional supplied photos are preserved in `photo-sources/`: `IMG_1750.jpeg`
+as `bees-on-frames.jpeg`, `IMG_7971.jpeg` as `winter-hives.jpeg` (both on Our Bees),
+and `IMG_2356.jpeg` as `capped-honey.jpeg` (on Products). These use uncropped,
+orientation-corrected responsive WebP variants up to 1200px wide at quality 94.
 
 Production output is written to `dist/`. Tailwind is integrated through its Vite
 plugin, with theme tokens and the font definition in `src/index.css`.

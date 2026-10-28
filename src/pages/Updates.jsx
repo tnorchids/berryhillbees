@@ -20,10 +20,10 @@ export default function Updates() {
           Newest notes first.
         </p>
       </section>
-      <section aria-label='Updates' className='space-y-8 border-t border-line'>
+      <section aria-label='Updates' className='border-t border-line'>
         {updates.length ? (
           updates.map((update) => (
-            <div key={update.id} className='border-b border-line py-8'>
+            <div key={update.id} className='border-b border-line py-5'>
               <UpdatePost update={update} isNew={isNew(update)} />
             </div>
           ))

@@ -21,6 +21,17 @@ function PayPalForm({ children }) {
       <input type='hidden' name='business' value={paypal.business} />
       <input type='hidden' name='currency_code' value={paypal.currency} />
       <input type='hidden' name='lc' value='US' />
+      <input
+        type='hidden'
+        name='return'
+        value={`${window.location.origin}/buyonline/thankyou`}
+      />
+      <input
+        type='hidden'
+        name='cancel_return'
+        value={`${window.location.origin}/buyonline`}
+      />
+      <input type='hidden' name='rm' value='1' />
       {children}
     </form>
   );

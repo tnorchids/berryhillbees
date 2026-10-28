@@ -10,6 +10,7 @@ import Updates from './pages/Updates.jsx';
 import useUpdates from './hooks/useUpdates.js';
 import { NewUpdateBadge } from './components/UpdatePost.jsx';
 import PageMetadata from './components/PageMetadata.jsx';
+import ThankYou from './pages/ThankYou.jsx';
 
 const pages = [
   { path: '/', label: 'Home', component: Home },
@@ -62,35 +63,40 @@ function Header({ currentPath }) {
 
 function Footer() {
   return (
-    <footer className='-mx-6 border-t border-honey/40 bg-honey/5 px-6 sm:-mx-10 sm:px-10'>
-      <div className='mx-auto flex max-w-6xl flex-col gap-5 py-8 sm:flex-row sm:items-center sm:justify-between sm:py-10'>
+    <footer className='-mx-6 border-t border-line bg-[#f3f0e8] px-6 sm:-mx-10 sm:px-10'>
+      <div className='mx-auto flex max-w-6xl flex-col gap-6 py-8 sm:flex-row sm:items-center sm:justify-between sm:py-10'>
         <div>
-          <a href='/' className='font-serif text-2xl text-ink'>
+          <div className='mb-4 h-0.5 w-10 bg-honey' aria-hidden='true' />
+          <a href='/' className='font-serif text-2xl tracking-tight text-ink'>
             Berry Hill Bees
           </a>
-          <p className='mt-2 text-xs leading-6 text-muted'>
+          <p className='mt-1 text-xs leading-6 text-muted'>
             A small apiary in Solway · Knoxville, Tennessee.
           </p>
         </div>
         <div className='text-sm text-muted'>
           <nav
             aria-label='Footer navigation'
-            className='flex flex-wrap gap-x-6 gap-y-2'
+            className='flex flex-wrap items-center gap-x-5 gap-y-2'
           >
             <a
               href='/wheretobuy'
-              className='py-2 underline decoration-honey/60 underline-offset-4 hover:text-ink'
+              className='py-2 underline-offset-4 hover:text-ink hover:underline hover:decoration-honey'
             >
               Find us locally
             </a>
+            <span
+              aria-hidden='true'
+              className='size-1 rounded-full bg-honey/60'
+            />
             <a
               href='/contact'
-              className='py-2 underline decoration-honey/60 underline-offset-4 hover:text-ink'
+              className='py-2 underline-offset-4 hover:text-ink hover:underline hover:decoration-honey'
             >
               Say hello
             </a>
           </nav>
-          <p className='mt-2 text-xs sm:text-right'>
+          <p className='mt-3 text-xs text-muted sm:text-right'>
             © {new Date().getFullYear()} Berry Hill Bees
           </p>
         </div>
@@ -101,7 +107,9 @@ function Footer() {
 export default function App() {
   const currentPath = window.location.pathname.replace(/\/+$/, '') || '/';
   const Page =
-    pages.find(({ path }) => path === currentPath)?.component ?? NotFound;
+    currentPath === '/buyonline/thankyou'
+      ? ThankYou
+      : (pages.find(({ path }) => path === currentPath)?.component ?? NotFound);
   return (
     <div className='min-h-screen bg-paper px-6 font-sans text-ink sm:px-10'>
       <PageMetadata path={currentPath} />

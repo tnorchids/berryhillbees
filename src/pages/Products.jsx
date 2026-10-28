@@ -1,7 +1,7 @@
 import { photos } from '../data/photos.js';
 import ResponsiveImage from '../components/ResponsiveImage.jsx';
 
-const { flipTopHoney, muthHoney, honeyCream, lipBalm } = photos;
+const { flipTopHoney, muthHoney, honeyCream, lipBalm, cappedHoney } = photos;
 
 function ProductPhoto({
   src,
@@ -65,6 +65,19 @@ export default function Products() {
             <h2 id='honey-heading' className='font-serif text-3xl sm:text-4xl'>
               Berry Hill honey
             </h2>
+            <figure className='mt-6 max-w-sm'>
+              <ResponsiveImage
+                src={cappedHoney}
+                sizes='(min-width: 432px) 384px, calc(100vw - 48px)'
+                alt='A wooden frame of honeycomb sealed with pale wax cappings, beside an uncapping tool'
+                loading='lazy'
+                decoding='async'
+                className='h-auto w-full rounded-sm'
+              />
+              <figcaption className='mt-3 text-xs leading-6 text-muted'>
+                Before the jar: a frame of honey sealed with wax cappings.
+              </figcaption>
+            </figure>
           </div>
           <div className='space-y-4 text-base leading-8 text-muted'>
             <p>

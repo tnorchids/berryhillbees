@@ -1,4 +1,10 @@
 export const pageMetadata = {
+  '/buyonline/thankyou': {
+    title: 'Thank You | Berry Hill Bees',
+    description:
+      'Thank you for supporting Berry Hill Bees. Find next steps for your order and contact us with any questions.',
+    noindex: true
+  },
   '/': {
     title: 'Berry Hill Bees | Raw Honey in Knoxville, Tennessee',
     description:

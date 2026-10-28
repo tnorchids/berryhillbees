@@ -3,7 +3,7 @@ import ResponsiveImage, {
   halfPhotoSizes
 } from '../components/ResponsiveImage.jsx';
 
-const { firstHives, dadsHives } = photos;
+const { firstHives, dadsHives, geffIvey } = photos;
 
 export default function About() {
   return (
@@ -26,6 +26,50 @@ export default function About() {
           Two small hives in 2014. A family connection to bees. And a curiosity
           about just how different honey can taste.
         </p>
+      </section>
+
+      <section
+        aria-labelledby='beekeeper-heading'
+        className='grid items-center gap-8 border-t border-line py-10 sm:py-12 lg:grid-cols-2 lg:gap-16'
+      >
+        <div>
+          <p className='mb-3 text-xs uppercase tracking-[0.2em] text-muted'>
+            Meet the beekeeper
+          </p>
+          <h2
+            id='beekeeper-heading'
+            className='font-serif text-3xl tracking-tight sm:text-4xl'
+          >
+            Hi, I&apos;m Geff Ivey.
+          </h2>
+          <p className='mt-3 font-serif text-xl text-muted'>
+            Software developer by day. Hobby beekeeper, too.
+          </p>
+          <div className='mt-6 space-y-4 text-base leading-8 text-muted'>
+            <p>
+              I&apos;m the head beekeeper here at Berry Hill Bees. I&apos;m also
+              the only beekeeper here, so the competition for that title
+              wasn&apos;t too fierce.
+            </p>
+            <p>
+              My day job is software development, and beekeeping is my hobby.
+              Berry Hill Bees is a small, personal operation, and I enjoy caring
+              for the bees and sharing the honey they make.
+            </p>
+          </div>
+        </div>
+        <figure className='min-w-0'>
+          <ResponsiveImage
+            src={geffIvey}
+            sizes={halfPhotoSizes}
+            alt='Geff Ivey smiling in his beekeeping veil beside a tall stack of hive boxes'
+            decoding='async'
+            className='h-auto w-full rounded-sm'
+          />
+          <figcaption className='border-b border-line py-3 text-xs leading-6 text-muted'>
+            The head beekeeper, with a little help from the bees.
+          </figcaption>
+        </figure>
       </section>
 
       <section
