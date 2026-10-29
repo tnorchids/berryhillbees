@@ -75,6 +75,11 @@ to three attempts per minute. Failed sends retain the visitor's input.
 
 ### Cloudflare contact setup
 
+Confirmed host: Cloudflare Pages at `dev.berryhillbees.com`. Use the dedicated
+contact Worker instructions in [CONTACT-SETUP.md](CONTACT-SETUP.md) for this
+deployment, with `worker/wrangler.contact.jsonc`. The whole-site Worker approach
+below is an alternative, not the configuration to deploy over the Pages site.
+
 `wrangler.jsonc` provides a Workers + Static Assets deployment, including SPA
 routing and the email/rate-limit bindings. This is a Worker deployment, not a
 Pages-only upload. If the existing site uses Pages, the contact API must instead

@@ -1,0 +1,27 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "berry-hill-bees-contact-dev",
+  "main": "contact-api.js",
+  "compatibility_date": "2026-10-28",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    {
+      "pattern": "dev.berryhillbees.com/api/contact*",
+      "zone_name": "berryhillbees.com"
+    }
+  ],
+  "send_email": [
+    {
+      "name": "EMAIL",
+      "destination_address": "berryhillbees@gmail.com"
+    }
+  ],
+  "ratelimits": [
+    {
+      "name": "CONTACT_LIMITER",
+      "namespace_id": "1002",
+      "simple": { "limit": 3, "period": 60 }
+    }
+  ]
+}

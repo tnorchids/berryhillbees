@@ -7,7 +7,7 @@
 - New site: React + Vite + Tailwind v4, plain JavaScript/JSX. Favor small function components, native browser features, and data-driven content. Avoid adding a component library, router, state library, or backend without a concrete need.
 - Geff Ivey is a hobby beekeeper and software developer by day, and the sole/head beekeeper. The apiary is in Solway, Knoxville, Tennessee. It has no storefront and offers no apiary tours. Keep copy personal and lightly humorous; don't invent business facts.
 - Inventory is deliberately edited in code and redeployed. An admin page/database was discussed and deferred.
-- Existing hosting is Cloudflare. Whether the existing deployment uses Pages or Workers remains unconfirmed. Prepared Worker configuration is not evidence of live deployment.
+- Confirmed hosting: Cloudflare Pages at `dev.berryhillbees.com`. Contact recipient: `berryhillbees@gmail.com`. The dedicated contact Worker uses `worker/wrangler.contact.jsonc`; see `CONTACT-SETUP.md`. Prepared configuration is not evidence of live deployment or verified email delivery.
 
 ## Find the right file first
 
