@@ -104,7 +104,7 @@ function ProductCard({ product }) {
 export default function BuyOnline() {
   return (
     <>
-      <section aria-labelledby='shop-heading' className='py-12 sm:py-16'>
+      <section aria-labelledby='shop-heading' className='page-intro'>
         <p className='mb-4 text-xs font-medium uppercase tracking-[0.2em] text-muted'>
           From our hives to your home
         </p>
@@ -112,7 +112,7 @@ export default function BuyOnline() {
           <div className='max-w-2xl'>
             <h1
               id='shop-heading'
-              className='font-serif text-5xl leading-tight tracking-tight sm:text-6xl'
+              className='font-serif text-4xl leading-tight tracking-tight sm:text-5xl lg:text-6xl'
             >
               A little sweetness, online.
             </h1>
@@ -148,7 +148,7 @@ export default function BuyOnline() {
 
       <aside
         aria-labelledby='shopping-help'
-        className='mb-12 grid gap-8 border-y border-line py-8 sm:mb-16 sm:grid-cols-2 sm:gap-16'
+        className='mb-8 grid gap-8 border-y border-line py-8 sm:mb-12 sm:grid-cols-2 sm:gap-16'
       >
         <div>
           <h2 id='shopping-help' className='font-serif text-2xl'>

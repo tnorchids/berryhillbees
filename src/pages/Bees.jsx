@@ -36,7 +36,7 @@ function BeePhoto({ src, alt, caption, eager = false, sizes }) {
 export default function Bees() {
   return (
     <>
-      <section aria-labelledby='bees-heading' className='py-12 sm:py-16'>
+      <section aria-labelledby='bees-heading' className='page-intro'>
         <p className='mb-5 flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-muted'>
           <span className='h-px w-7 bg-honey' aria-hidden='true' />
           Life in the apiary
@@ -44,13 +44,13 @@ export default function Bees() {
         <div className='grid gap-6 lg:grid-cols-2 lg:items-end lg:gap-16'>
           <h1
             id='bees-heading'
-            className='font-serif text-5xl leading-tight tracking-tight sm:text-6xl'
+            className='font-serif text-4xl leading-tight tracking-tight sm:text-5xl lg:text-6xl'
           >
             Meet our bees.
           </h1>
           <p className='max-w-lg text-base leading-8 text-muted sm:text-lg'>
             All of our bees live in a single apiary in the Solway area of
-            Knoxville. Keeping them together makes them easier to care forâ€”and
+            Knoxville. Keeping them together makes them easier to care for—and
             gives us plenty to watch.
           </p>
         </div>
@@ -65,7 +65,7 @@ export default function Bees() {
 
       <section
         aria-labelledby='honeybees-heading'
-        className='grid gap-6 py-10 sm:py-14 lg:grid-cols-2 lg:gap-16'
+        className='grid gap-6 section-spacing lg:grid-cols-2 lg:gap-16'
       >
         <h2
           id='honeybees-heading'
@@ -105,7 +105,7 @@ export default function Bees() {
 
       <section
         aria-labelledby='watching-heading'
-        className='border-t border-line py-10 sm:py-14'
+        className='border-t border-line section-spacing'
       >
         <h2
           id='watching-heading'
@@ -122,7 +122,7 @@ export default function Bees() {
 
       <section
         aria-labelledby='seasons-heading'
-        className='border-t border-line py-10 sm:py-14'
+        className='border-t border-line section-spacing'
       >
         <div className='mb-8 max-w-2xl'>
           <p className='mb-3 text-xs uppercase tracking-[0.2em] text-muted'>
@@ -157,7 +157,7 @@ export default function Bees() {
 
       <section
         aria-labelledby='video-heading'
-        className='border-t border-line py-10 sm:py-14'
+        className='border-t border-line section-spacing'
       >
         <div className='mb-7 flex flex-col justify-between gap-4 sm:flex-row sm:items-end'>
           <div>
@@ -175,7 +175,7 @@ export default function Bees() {
             href='https://www.youtube.com/watch?v=NIjJ1scu6zY'
             className='self-start py-2 text-sm underline decoration-honey underline-offset-4 hover:text-muted'
           >
-            Watch on YouTube <span aria-hidden='true'>â†’</span>
+            Watch on YouTube <span aria-hidden='true'>→</span>
           </a>
         </div>
         <iframe

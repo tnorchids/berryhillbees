@@ -33,14 +33,14 @@ export default function BuyLocally() {
     <>
       <section
         aria-labelledby='where-heading'
-        className='mx-auto max-w-2xl pb-10 pt-12 text-center sm:pb-12 sm:pt-16'
+        className='page-intro mx-auto max-w-2xl text-center'
       >
         <p className='mb-4 text-xs font-medium uppercase tracking-[0.2em] text-muted'>
           Find us locally
         </p>
         <h1
           id='where-heading'
-          className='font-serif text-5xl leading-tight tracking-tight sm:text-6xl'
+          className='font-serif text-4xl leading-tight tracking-tight sm:text-5xl lg:text-6xl'
         >
           Buy locally.
         </h1>
@@ -100,7 +100,7 @@ export default function BuyLocally() {
 
       <aside
         aria-labelledby='before-heading'
-        className='mb-12 flex flex-col gap-5 border-y border-line py-6 sm:mb-16 sm:flex-row sm:items-center sm:justify-between sm:gap-10'
+        className='mb-8 flex flex-col gap-5 border-y border-line py-6 sm:mb-12 sm:flex-row sm:items-center sm:justify-between sm:gap-10'
       >
         <div className='max-w-2xl'>
           <h2 id='before-heading' className='font-serif text-xl'>

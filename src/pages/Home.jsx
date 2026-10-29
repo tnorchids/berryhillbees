@@ -10,34 +10,57 @@ export default function Home() {
   const latest = updates[0];
   return (
     <>
-      <section
-        aria-labelledby='welcome-heading'
-        className='py-12 sm:py-16 lg:py-20'
-      >
-        <p className='mb-5 flex items-center gap-3 text-[0.65rem] font-medium uppercase tracking-[0.2em] text-muted sm:text-xs'>
-          <span className='h-px w-7 bg-honey' aria-hidden='true' />
-          Knoxville, Tennessee
-        </p>
-        <div className='grid gap-6 lg:grid-cols-2 lg:items-end lg:gap-16'>
-          <h1
-            id='welcome-heading'
-            className='max-w-xl text-balance font-serif text-5xl leading-[1.12] tracking-[-0.025em] sm:text-6xl lg:text-[4.25rem]'
-          >
-            A small apiary.
-            <br /> A little sweetness.
-          </h1>
-          <p className='max-w-lg text-base leading-8 text-muted sm:text-lg'>
-            Welcome to Berry Hill Bees. We keep our bees in Solway, near Hardin
-            Valley, using organic practices to produce all natural, raw honey.
-            From our hives, here in Knoxville.
-          </p>
+      <section aria-labelledby='welcome-heading' className='page-intro'>
+        <div className='grid items-center gap-8 lg:grid-cols-2 lg:gap-12'>
+          <div>
+            <p className='mb-4 flex items-center gap-3 text-[0.65rem] font-medium uppercase tracking-[0.2em] text-muted sm:text-xs'>
+              <span className='h-px w-7 bg-honey' aria-hidden='true' />
+              Knoxville, Tennessee
+            </p>
+            <h1
+              id='welcome-heading'
+              className='max-w-xl text-balance font-serif text-4xl leading-[1.12] tracking-[-0.025em] sm:text-5xl lg:text-6xl'
+            >
+              A small apiary.
+              <br /> A little sweetness.
+            </h1>
+          </div>
+          <div>
+            <p className='max-w-lg text-base leading-7 text-muted sm:text-lg sm:leading-8'>
+              Welcome to Berry Hill Bees. We keep our bees in Solway, near
+              Hardin Valley, using organic practices to produce all natural, raw
+              honey. From our hives, here in Knoxville.
+            </p>
+            <div className='mt-6 flex flex-wrap items-center gap-x-6 gap-y-3'>
+              <a href='/buyonline' className='shop-link'>
+                Buy online <span aria-hidden='true'>→</span>
+              </a>
+              <a
+                href='/wheretobuy'
+                className='inline-block py-3 text-sm underline decoration-honey underline-offset-4 hover:text-muted'
+              >
+                Buy locally
+              </a>
+            </div>
+          </div>
+          <figure className='min-w-0 lg:col-span-2'>
+            <ResponsiveImage
+              src={hives}
+              alt='Geffrey tending the colorful Berry Hill Bee hives in Solway'
+              className='h-auto w-full rounded-sm'
+              fetchPriority='high'
+            />
+            <figcaption className='mt-3 text-xs leading-6 text-muted'>
+              Geffrey in the bees! A little life at Berry Hill.
+            </figcaption>
+          </figure>
         </div>
       </section>
 
       {latest && (
         <section
           aria-labelledby='latest-heading'
-          className='mb-10 grid gap-6 border-y border-line py-7 sm:mb-12 lg:grid-cols-[1fr_2fr] lg:gap-16'
+          className='grid gap-4 border-y border-line bg-honey/5 px-5 py-5 sm:px-6 lg:grid-cols-[1fr_2fr] lg:gap-12'
         >
           <div>
             <h2
@@ -57,24 +80,9 @@ export default function Home() {
         </section>
       )}
 
-      <figure>
-        <div className='overflow-hidden rounded-sm bg-stone-100'>
-          <ResponsiveImage
-            src={hives}
-            alt='Geffrey tending the colorful Berry Hill Bee hives in Solway'
-            className='h-auto w-full'
-            fetchPriority='high'
-          />
-        </div>
-        <figcaption className='flex flex-wrap items-center justify-between gap-x-6 gap-y-2 border-b border-line py-4 text-xs leading-relaxed text-muted'>
-          <span>Geffrey in the bees!</span>
-          <span>Life at Berry Hill Bees</span>
-        </figcaption>
-      </figure>
-
       <section
         aria-labelledby='apiary-heading'
-        className='grid gap-6 py-12 sm:py-16 lg:grid-cols-2 lg:gap-16'
+        className='grid gap-6 page-intro lg:grid-cols-2 lg:gap-16'
       >
         <div>
           <p className='mb-3 text-[0.65rem] font-medium uppercase tracking-[0.2em] text-muted sm:text-xs'>

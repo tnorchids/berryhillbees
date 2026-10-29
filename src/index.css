@@ -34,3 +34,17 @@ input:focus-visible {
   background: #eee0b9;
   color: var(--color-ink);
 }
+
+@layer components {
+  .page-intro {
+    @apply py-8 sm:py-10 lg:py-12;
+  }
+
+  .section-spacing {
+    @apply py-8 sm:py-10;
+  }
+
+  .shop-link {
+    @apply inline-flex min-h-11 items-center justify-center gap-3 rounded-sm bg-ink px-5 py-3 text-sm text-paper transition-colors hover:bg-ink/85;
+  }
+}

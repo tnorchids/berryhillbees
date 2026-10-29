@@ -10,7 +10,7 @@ export default function ThankYou() {
       </p>
       <h1
         id='thank-you-heading'
-        className='font-serif text-5xl leading-tight tracking-tight sm:text-6xl'
+        className='font-serif text-4xl leading-tight tracking-tight sm:text-5xl lg:text-6xl'
       >
         Thank you for supporting our little apiary.
       </h1>

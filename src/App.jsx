@@ -1,3 +1,4 @@
+import { useRef, useState } from 'react';
 import logo from './assets/bhbheader.png';
 import Home from './pages/Home.jsx';
 import Products from './pages/Products.jsx';
@@ -24,30 +25,58 @@ const pages = [
 ];
 
 function Header({ currentPath }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuButton = useRef(null);
   const { updates, isNew } = useUpdates();
   const hasNewUpdates = updates.some(isNew);
   return (
-    <header className='mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-3 border-b border-line px-0 py-6 sm:py-8'>
+    <header
+      className='mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-x-4 gap-y-4 border-b border-line py-4 sm:py-5'
+      onKeyDown={(event) => {
+        if (event.key === 'Escape' && menuOpen) {
+          setMenuOpen(false);
+          menuButton.current.focus();
+        }
+      }}
+    >
       <a
         href='/'
         aria-label='Berry Hill Bees home'
         className='shrink-0 rounded-sm'
       >
-        <img src={logo} alt='Berry Hill Bees' className='h-auto w-56 sm:w-68' />
+        <img
+          src={logo}
+          alt='Berry Hill Bees'
+          width='360'
+          height='70'
+          className='h-auto w-44 sm:w-52'
+        />
       </a>
+      <button
+        ref={menuButton}
+        type='button'
+        aria-expanded={menuOpen}
+        aria-controls='main-navigation'
+        onClick={() => setMenuOpen(!menuOpen)}
+        className='inline-flex min-h-11 items-center gap-2 rounded-sm border border-line bg-white px-3 text-sm hover:border-honey xl:hidden'
+      >
+        {menuOpen ? 'Close' : 'Menu'}
+        <span aria-hidden='true'>{menuOpen ? '×' : '☰'}</span>
+      </button>
       <nav
+        id='main-navigation'
         aria-label='Main navigation'
-        className='flex flex-wrap justify-end gap-x-5 gap-y-1 sm:gap-x-8'
+        className={`${menuOpen ? 'grid' : 'hidden'} w-full grid-cols-2 gap-2 border-t border-line pt-4 xl:flex xl:w-auto xl:items-center xl:gap-4 xl:border-0 xl:pt-0`}
       >
         {pages.map(({ path, label }) => (
           <a
             key={path}
             href={path}
             aria-current={currentPath === path ? 'page' : undefined}
-            className='group inline-flex items-center gap-2 py-2 text-sm text-ink'
+            className={`group inline-flex min-h-11 items-center gap-2 rounded-sm px-3 py-2 text-sm text-ink xl:px-0 ${currentPath === path ? 'bg-honey/10 xl:bg-transparent' : 'hover:bg-honey/5 xl:hover:bg-transparent'}`}
           >
             <span
-              className={`size-1.5 rounded-full ${currentPath === path ? 'bg-honey' : 'bg-transparent'}`}
+              className={`size-1.5 shrink-0 rounded-full ${currentPath === path ? 'bg-honey' : 'bg-transparent'}`}
               aria-hidden='true'
             />
             <span className='underline-offset-4 group-hover:underline'>

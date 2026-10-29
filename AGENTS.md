@@ -41,6 +41,7 @@ Legacy `/#/about`-style URLs redirect to clean paths; `/purchase` within a legac
 - Match the restrained warm design: `paper`, `ink`, `muted`, `line`, `honey` tokens and Mate serif headings. Reuse existing layouts before inventing another pattern.
 - Footer should remain compact. Elaborate columns, honeycomb art, gradients, and decorative arrows were tried and rejected. Current direction: warm solid background, small gold line, simple links.
 - Keep update posts vertically compact. Use the shared `UpdatePost` component for page and homepage consistency.
+- Use `page-intro` and `section-spacing` from `src/index.css` for compact, consistent vertical rhythm. Navigation uses a disclosure menu below 1280px (Escape closes and returns focus); desktop navigation stays on one row. Buy Online uses the same navigation styling as every other link; do not give it a special highlight. In-page shopping buttons can retain their dark call-to-action styling. Keep photos prominent: the user disliked smaller photos in the design refinement. Home keeps a full-width photo below the introduction; product photos use generous space and minimal padding. Long pages vary image placement and card/callout sections.
 - Preserve accessible labels, keyboard focus, dialog Escape/close behavior, and responsive layouts. Product images enlarge in a native dialog; avoid an extra lightbox library.
 
 ## Data and integration invariants

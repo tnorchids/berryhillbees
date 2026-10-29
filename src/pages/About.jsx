@@ -10,14 +10,14 @@ export default function About() {
     <>
       <section
         aria-labelledby='about-heading'
-        className='mx-auto max-w-2xl pb-10 pt-12 text-center sm:pb-12 sm:pt-16'
+        className='page-intro mx-auto max-w-2xl text-center'
       >
         <p className='mb-4 text-xs font-medium uppercase tracking-[0.2em] text-muted'>
           Our story
         </p>
         <h1
           id='about-heading'
-          className='font-serif text-5xl leading-tight tracking-tight sm:text-6xl'
+          className='font-serif text-4xl leading-tight tracking-tight sm:text-5xl lg:text-6xl'
         >
           Where it all started.
         </h1>
@@ -30,7 +30,7 @@ export default function About() {
 
       <section
         aria-labelledby='beekeeper-heading'
-        className='grid items-center gap-8 border-t border-line py-10 sm:py-12 lg:grid-cols-2 lg:gap-16'
+        className='grid items-center gap-8 border-t border-line section-spacing lg:grid-cols-2 lg:gap-16'
       >
         <div>
           <p className='mb-3 text-xs uppercase tracking-[0.2em] text-muted'>
@@ -74,9 +74,9 @@ export default function About() {
 
       <section
         aria-labelledby='first-hives-heading'
-        className='grid items-center gap-8 border-t border-line py-10 sm:py-12 lg:grid-cols-2 lg:gap-16'
+        className='grid items-center gap-8 border-t border-line section-spacing lg:grid-cols-2 lg:gap-16'
       >
-        <div>
+        <div className='lg:order-2'>
           <p className='mb-3 text-xs uppercase tracking-[0.2em] text-muted'>
             2014
           </p>
@@ -98,7 +98,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <figure className='min-w-0'>
+        <figure className='min-w-0 lg:order-1'>
           <ResponsiveImage
             src={firstHives}
             sizes={halfPhotoSizes}
@@ -114,7 +114,7 @@ export default function About() {
 
       <section
         aria-labelledby='inspiration-heading'
-        className='grid gap-8 border-t border-line py-10 sm:py-12 lg:grid-cols-2 lg:gap-16'
+        className='grid gap-8 border-t border-line section-spacing lg:grid-cols-2 lg:gap-16'
       >
         <div>
           <h2
@@ -163,7 +163,7 @@ export default function About() {
 
       <section
         aria-labelledby='growing-heading'
-        className='mb-12 border-y border-line py-8 sm:mb-16 sm:py-10'
+        className='mb-8 border-l-2 border-honey bg-honey/5 px-5 py-6 sm:mb-12 sm:px-8'
       >
         <div className='mx-auto max-w-2xl'>
           <h2

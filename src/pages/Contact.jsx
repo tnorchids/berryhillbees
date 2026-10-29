@@ -31,13 +31,13 @@ function ContactForm() {
   const fieldClass =
     'mt-2 block w-full rounded-sm border border-line bg-paper px-3 py-3 text-base text-ink';
   return (
-    <form onSubmit={submit} className='mt-6 space-y-5'>
+    <form onSubmit={submit} autoComplete='off' className='mt-6 space-y-5'>
       <label className='block text-sm' htmlFor='contact-name'>
         Your name
         <input
           id='contact-name'
           name='name'
-          autoComplete='name'
+          autoComplete='off'
           required
           maxLength={100}
           className={fieldClass}
@@ -49,7 +49,7 @@ function ContactForm() {
           id='contact-email'
           name='email'
           type='email'
-          autoComplete='email'
+          autoComplete='off'
           required
           maxLength={254}
           className={fieldClass}
@@ -60,6 +60,7 @@ function ContactForm() {
         <textarea
           id='contact-message'
           name='message'
+          autoComplete='off'
           required
           maxLength={5000}
           rows={6}
@@ -97,14 +98,14 @@ export default function Contact() {
     <>
       <section
         aria-labelledby='contact-heading'
-        className='mx-auto max-w-2xl pb-10 pt-12 text-center sm:pb-12 sm:pt-16'
+        className='page-intro mx-auto max-w-2xl text-center'
       >
         <p className='mb-4 text-xs font-medium uppercase tracking-[0.2em] text-muted'>
           Say hello
         </p>
         <h1
           id='contact-heading'
-          className='font-serif text-5xl leading-tight tracking-tight sm:text-6xl'
+          className='font-serif text-4xl leading-tight tracking-tight sm:text-5xl lg:text-6xl'
         >
           We&apos;d love to hear from you.
         </h1>
@@ -116,9 +117,9 @@ export default function Contact() {
 
       <section
         aria-label='Ways to get in touch'
-        className='grid gap-6 pb-10 sm:grid-cols-2 sm:pb-14'
+        className='grid items-start gap-6 pb-8 sm:pb-10 lg:grid-cols-[1.5fr_1fr] lg:gap-10'
       >
-        <article className='rounded-sm border border-line bg-white p-6 sm:p-8'>
+        <article className='rounded-sm border border-line bg-white p-5 sm:p-7'>
           <div className='mb-6 h-1 w-8 bg-honey/70' aria-hidden='true' />
           <h2 className='font-serif text-3xl tracking-tight'>
             Drop us a line.
@@ -129,7 +130,7 @@ export default function Contact() {
           </p>
           <ContactForm />
         </article>
-        <article className='rounded-sm border border-line bg-white p-6 sm:p-8'>
+        <article className='border-l-2 border-honey bg-honey/5 p-5 sm:p-7'>
           <div className='mb-6 h-1 w-8 bg-honey/70' aria-hidden='true' />
           <h2 className='font-serif text-3xl tracking-tight'>Keep in touch.</h2>
           <p className='mt-4 text-sm leading-7 text-muted'>
@@ -150,7 +151,7 @@ export default function Contact() {
 
       <aside
         aria-labelledby='visiting-heading'
-        className='mb-12 flex flex-col justify-between gap-5 border-y border-line py-7 sm:mb-16 sm:flex-row sm:items-center sm:gap-12'
+        className='mb-8 flex flex-col justify-between gap-5 border-y border-line py-7 sm:mb-12 sm:flex-row sm:items-center sm:gap-12'
       >
         <div className='max-w-xl'>
           <h2 id='visiting-heading' className='font-serif text-2xl'>
