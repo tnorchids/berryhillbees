@@ -167,6 +167,9 @@ Additional supplied photos are preserved in `photo-sources/`: `IMG_1750.jpeg`
 as `bees-on-frames.jpeg`, `IMG_7971.jpeg` as `winter-hives.jpeg` (both on Our Bees),
 and `IMG_2356.jpeg` as `capped-honey.jpeg` (on Products). These use uncropped,
 orientation-corrected responsive WebP variants up to 1200px wide at quality 94.
+The opening Our Bees photo uses `carniolan-oakleaf-v1.png`, preserved as
+`photo-sources/bee-on-oakleaf.png`, with uncropped responsive variants up to its
+2000px source width. The homepage retains its original apiary photograph.
 
 Production output is written to `dist/`. Tailwind is integrated through its Vite
 plugin, with theme tokens and the font definition in `src/index.css`.

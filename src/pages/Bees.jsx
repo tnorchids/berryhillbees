@@ -2,7 +2,7 @@ import { photos } from '../data/photos.js';
 import ResponsiveImage from '../components/ResponsiveImage.jsx';
 
 const {
-  bigHives: hives,
+  beeOnOakleaf,
   italians,
   watching,
   activity,
@@ -57,10 +57,10 @@ export default function Bees() {
       </section>
 
       <BeePhoto
-        src={hives}
+        src={beeOnOakleaf}
         eager
-        alt='Geffrey standing beside tall stacks of Berry Hill Bees hives'
-        caption="Here are some of our big hives. I'm over six feet tall, so you can see these are monsters!"
+        alt='A honeybee carrying pollen in flight beside white oakleaf hydrangea blossoms'
+        caption='A little closer to the action: a bee in flight, with pollen tucked onto its hind legs.'
       />
 
       <section

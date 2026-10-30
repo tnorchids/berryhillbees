@@ -30,7 +30,7 @@ Paths below are relative to `bhb-new/`.
 | Contact delivery/backend tests                                          | `worker/index.js`, `worker/contact.test.js`                   |
 | Hosting bindings                                                        | `wrangler.jsonc`                                              |
 
-Navigation order: Home, Our Bees, Products, Buy Online, Buy Locally, About, Updates, Contact.
+Navigation order: Home, Our Bees, Products, Buy Locally, Buy Online, About, Updates, Contact. Homepage purchase links also put Buy Locally before Buy Online.
 Buy Locally uses `BuyLocally.jsx` but retains `/wheretobuy`. Don't rename URLs casually.
 `/buyonline/thankyou` is a hidden return route, not a navigation item, and is `noindex`.
 Legacy `/#/about`-style URLs redirect to clean paths; `/purchase` within a legacy hash maps to `/buyonline`.

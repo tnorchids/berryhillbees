@@ -32,14 +32,17 @@ export default function Home() {
               honey. From our hives, here in Knoxville.
             </p>
             <div className='mt-6 flex flex-wrap items-center gap-x-6 gap-y-3'>
-              <a href='/buyonline' className='shop-link'>
-                Buy online <span aria-hidden='true'>→</span>
-              </a>
               <a
                 href='/wheretobuy'
                 className='inline-block py-3 text-sm underline decoration-honey underline-offset-4 hover:text-muted'
               >
                 Buy locally
+              </a>
+              <a
+                href='/buyonline'
+                className='inline-block py-3 text-sm underline decoration-honey underline-offset-4 hover:text-muted'
+              >
+                Buy online
               </a>
             </div>
           </div>

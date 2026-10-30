@@ -14,6 +14,7 @@ OUTPUT.mkdir(parents=True, exist_ok=True)
 
 # name: (source, largest useful width, optional source-pixel crop)
 SOURCES = {
+    'beeOnOakleaf': ('bhb-new/photo-sources/bee-on-oakleaf.png', 2000, None),
     'beesOnFrames': ('bhb-new/photo-sources/bees-on-frames.jpeg', 1200, None),
     'winterHives': ('bhb-new/photo-sources/winter-hives.jpeg', 1200, None),
     'cappedHoney': ('bhb-new/photo-sources/capped-honey.jpeg', 1200, None),

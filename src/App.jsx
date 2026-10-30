@@ -17,8 +17,8 @@ const pages = [
   { path: '/', label: 'Home', component: Home },
   { path: '/bees', label: 'Our Bees', component: Bees },
   { path: '/products', label: 'Products', component: Products },
-  { path: '/buyonline', label: 'Buy Online', component: BuyOnline },
   { path: '/wheretobuy', label: 'Buy Locally', component: BuyLocally },
+  { path: '/buyonline', label: 'Buy Online', component: BuyOnline },
   { path: '/about', label: 'About', component: About },
   { path: '/updates', label: 'Updates', component: Updates },
   { path: '/contact', label: 'Contact', component: Contact }
@@ -49,7 +49,7 @@ function Header({ currentPath }) {
           alt='Berry Hill Bees'
           width='360'
           height='70'
-          className='h-auto w-44 sm:w-52'
+          className='h-auto w-52 max-w-[calc(100vw-9rem)] sm:w-64 sm:max-w-none'
         />
       </a>
       <button
