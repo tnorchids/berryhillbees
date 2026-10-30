@@ -122,20 +122,20 @@ export default function Contact() {
         <article className='rounded-sm border border-line bg-white p-5 sm:p-7'>
           <div className='mb-6 h-1 w-8 bg-honey/70' aria-hidden='true' />
           <h2 className='font-serif text-3xl tracking-tight'>
-            Drop us a line.
+            Send a message.
           </h2>
           <p className='mt-4 text-sm leading-7 text-muted'>
-            Send your questions, comments, or feedback straight to Berry Hill
-            Bees.
+            Use this form for product questions, order inquiries, or feedback.
           </p>
           <ContactForm />
         </article>
         <article className='border-l-2 border-honey bg-honey/5 p-5 sm:p-7'>
           <div className='mb-6 h-1 w-8 bg-honey/70' aria-hidden='true' />
-          <h2 className='font-serif text-3xl tracking-tight'>Keep in touch.</h2>
+          <h2 className='font-serif text-3xl tracking-tight'>
+            Follow our updates.
+          </h2>
           <p className='mt-4 text-sm leading-7 text-muted'>
-            You can also follow Berry Hill Bees on Facebook for a little more
-            life from the apiary.
+            Follow Berry Hill Bees on Facebook for apiary updates.
           </p>
           <a
             href='https://www.facebook.com/berryhillbees'
@@ -168,7 +168,7 @@ export default function Contact() {
             href='/wheretobuy'
             className='py-2 underline decoration-honey underline-offset-4 hover:text-muted'
           >
-            Buy locally
+            Local Retailers
           </a>
           <a
             href='/buyonline'

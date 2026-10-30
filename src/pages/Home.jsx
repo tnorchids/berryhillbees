@@ -36,7 +36,7 @@ export default function Home() {
                 href='/wheretobuy'
                 className='inline-block py-3 text-sm underline decoration-honey underline-offset-4 hover:text-muted'
               >
-                Buy locally
+                Local Retailers
               </a>
               <a
                 href='/buyonline'
@@ -54,7 +54,7 @@ export default function Home() {
               fetchPriority='high'
             />
             <figcaption className='mt-3 text-xs leading-6 text-muted'>
-              Geffrey in the bees! A little life at Berry Hill.
+              Geffrey in the bees!
             </figcaption>
           </figure>
         </div>
@@ -95,14 +95,14 @@ export default function Home() {
             id='apiary-heading'
             className='max-w-sm font-serif text-3xl leading-tight tracking-tight sm:text-4xl'
           >
-            Made by our bees.
-            <br /> Shared by your beekeeper.
+            Our honey.
+            <br /> From our own hives.
           </h2>
         </div>
         <div className='max-w-lg space-y-4 text-base leading-8 text-muted'>
           <p>
-            Raw honey is our main product, but we also offer bee-related
-            favorites like our Beeswax and Honey Cream and Beeswax Lip Balm.
+            Raw honey is our main product. We also offer Beeswax and Honey Cream
+            and Beeswax Lip Balm.
           </p>
           <p>
             We produce all the honey we sell, so you&apos;re buying from the

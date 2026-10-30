@@ -16,8 +16,8 @@ export default function Updates() {
           Notes from the apiary.
         </h1>
         <p className='mt-6 text-base leading-8 text-muted sm:text-lg'>
-          Harvest news, shop announcements, and a little life with our bees.
-          Newest notes first.
+          Harvest news, product availability, and notes from the apiary. Newest
+          updates first.
         </p>
       </section>
       <section aria-label='Updates' className='border-t border-line'>

@@ -30,16 +30,18 @@ Paths below are relative to `bhb-new/`.
 | Contact delivery/backend tests                                          | `worker/index.js`, `worker/contact.test.js`                   |
 | Hosting bindings                                                        | `wrangler.jsonc`                                              |
 
-Navigation order: Home, Our Bees, Products, Buy Locally, Buy Online, About, Updates, Contact. Homepage purchase links also put Buy Locally before Buy Online.
-Buy Locally uses `BuyLocally.jsx` but retains `/wheretobuy`. Don't rename URLs casually.
+Navigation order: Home, Our Bees, Products, Local Retailers, Buy Online, About, Updates, Contact. Homepage purchase links also put Local Retailers before Buy Online.
+Local Retailers uses `LocalRetailers.jsx` but retains `/wheretobuy`. Don't rename URLs casually.
 `/buyonline/thankyou` is a hidden return route, not a navigation item, and is `noindex`.
 Legacy `/#/about`-style URLs redirect to clean paths; `/purchase` within a legacy hash maps to `/buyonline`.
 
 ## Style and implementation preferences
 
+- Copy tone is currently a trial: more direct and matter-of-fact, with restrained beekeeper humor (roughly 7/10 of the previous cuteness). Preserve the user's legacy stories and avoid promotional filler. Before-trial source snapshots are in `.wrangler/copy-tone-before/` for a targeted revert; check for subsequent edits before restoring anything.
+
 - Single quotes in JS **and JSX**, no trailing commas. Use the existing Prettier config; JSON still requires double quotes.
 - Match the restrained warm design: `paper`, `ink`, `muted`, `line`, `honey` tokens and Mate serif headings. Reuse existing layouts before inventing another pattern.
-- Footer should remain compact. Elaborate columns, honeycomb art, gradients, and decorative arrows were tried and rejected. Current direction: warm solid background, small gold line, simple links.
+- Footer should remain compact. Elaborate columns, honeycomb art, gradients, and decorative arrows were tried and rejected. Current direction: warm solid background, small gold line, small existing logo in place of plain brand text, simple links.
 - Keep update posts vertically compact. Use the shared `UpdatePost` component for page and homepage consistency.
 - Use `page-intro` and `section-spacing` from `src/index.css` for compact, consistent vertical rhythm. Navigation uses a disclosure menu below 1280px (Escape closes and returns focus); desktop navigation stays on one row. Buy Online uses the same navigation styling as every other link; do not give it a special highlight. In-page shopping buttons can retain their dark call-to-action styling. Keep photos prominent: the user disliked smaller photos in the design refinement. Home keeps a full-width photo below the introduction; product photos use generous space and minimal padding. Long pages vary image placement and card/callout sections.
 - Preserve accessible labels, keyboard focus, dialog Escape/close behavior, and responsive layouts. Product images enlarge in a native dialog; avoid an extra lightbox library.

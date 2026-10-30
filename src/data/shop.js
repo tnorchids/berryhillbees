@@ -16,7 +16,7 @@ export const products = [
     name: 'Summer Honey',
     size: '1 pound · Plastic jar with flip-top lid',
     description:
-      'Rich, floral summer honey from our Knoxville hives. A convenient flip-top lid makes it easy to enjoy a little every day.',
+      'Rich, floral summer honey from our Knoxville hives, in a plastic jar with a flip-top lid for easy dispensing.',
     image: flipTopHoney,
     alt: 'Berry Hill honey in a plastic jar with a flip-top lid',
     purchaseName: '1 LB Honey Plastic Jar',
@@ -29,7 +29,7 @@ export const products = [
     name: 'Summer Honey in a Muth Jar',
     size: '1 pound · Decorative glass jar with cork',
     description:
-      'Our summer honey in a beautiful, decorative Muth jar. A little sweetness to give as a gift—or keep for yourself.',
+      'Our summer honey in a decorative glass Muth jar with a cork top. A good option for gifts.',
     image: muthHoney,
     alt: 'Berry Hill honey in a decorative Muth jar with a cork',
     purchaseName: '1 LB Honey Muth Jar',
@@ -42,7 +42,7 @@ export const products = [
     name: 'Beeswax Lip Balm',
     size: '1 tube',
     description:
-      'Made with our premium capping wax in a handy twist-up tube. The bee in the photo is real, but it stays here with us!',
+      'Made with our premium capping wax in a twist-up tube. The bee in the photo is real; it is not included.',
     image: lipBalm,
     alt: 'Berry Hill Beeswax Lip Balm with a bee on the tube',
     purchaseName: '1 Tube Lip Balm',

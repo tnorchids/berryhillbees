@@ -8,7 +8,7 @@ export const pageMetadata = {
   '/': {
     title: 'Berry Hill Bees | Raw Honey in Knoxville, Tennessee',
     description:
-      'Meet Berry Hill Bees, a small apiary in Solway, Knoxville. Explore our raw honey, beeswax favorites, and the bees behind them.'
+      'Berry Hill Bees is a small apiary in Solway, Knoxville. Learn about our raw honey, beeswax products, and beekeeping.'
   },
   '/bees': {
     title: 'Our Bees | Berry Hill Bees',
@@ -26,9 +26,9 @@ export const pageMetadata = {
       'Shop Berry Hill Bees honey online. Compare jar options, check product availability, and add your favorites to a PayPal cart.'
   },
   '/wheretobuy': {
-    title: 'Buy Locally in Knoxville | Berry Hill Bees',
+    title: 'Local Retailers in Knoxville | Berry Hill Bees',
     description:
-      'Find Berry Hill Bees honey at Knoxville retailers, including Kirby Plants, Three Rivers Market, and the Visit Knoxville Visitor Center.'
+      'Find Berry Hill Bees honey at Kirby Plants and Three Rivers Market in Knoxville, with retailer addresses, phone numbers, and maps.'
   },
   '/about': {
     title: 'Our Story | Berry Hill Bees',

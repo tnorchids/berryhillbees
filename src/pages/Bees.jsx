@@ -60,7 +60,7 @@ export default function Bees() {
         src={beeOnOakleaf}
         eager
         alt='A honeybee carrying pollen in flight beside white oakleaf hydrangea blossoms'
-        caption='A little closer to the action: a bee in flight, with pollen tucked onto its hind legs.'
+        caption='A bee in flight, carrying pollen on its hind legs.'
       />
 
       <section
@@ -135,8 +135,8 @@ export default function Bees() {
             A hive through the seasons.
           </h2>
           <p className='mt-4 text-base leading-8 text-muted'>
-            Some days bring a hive full of activity. Others bring a blanket of
-            snow. Here are two very different views of life with our bees.
+            Two views of the apiary in different seasons: bees across the frames
+            during an inspection, and the hives after a snowfall.
           </p>
         </div>
         <div className='grid items-start gap-8 sm:grid-cols-2 sm:gap-6'>
@@ -150,7 +150,7 @@ export default function Bees() {
             src={winterHives}
             sizes='(min-width: 1232px) 564px, (min-width: 640px) calc((100vw - 104px) / 2), calc(100vw - 48px)'
             alt='Colorful beehives and surrounding trees covered in a thick layer of snow'
-            caption='A quieter view of the apiary under a blanket of snow.'
+            caption='The apiary after a snowfall.'
           />
         </div>
       </section>
@@ -168,7 +168,7 @@ export default function Bees() {
               Spring at Berry Hill.
             </h2>
             <p className='mt-3 text-sm leading-7 text-muted'>
-              A little time in the apiary, with the bees in action.
+              A video of activity at the apiary in early spring.
             </p>
           </div>
           <a

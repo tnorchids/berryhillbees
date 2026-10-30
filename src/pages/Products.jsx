@@ -45,8 +45,8 @@ export default function Products() {
             Our products.
           </h1>
           <p className='max-w-lg text-base leading-8 text-muted sm:text-lg'>
-            Honey from our Knoxville hives, and a few beeswax favorites. Simple
-            pleasures, made with what our bees give us.
+            Honey from our Knoxville hives, along with Beeswax and Honey Cream
+            and Beeswax Lip Balm.
           </p>
         </div>
       </section>
@@ -73,7 +73,7 @@ export default function Products() {
                 className='h-auto w-full rounded-sm'
               />
               <figcaption className='mt-3 text-xs leading-6 text-muted'>
-                Before the jar: a frame of honey sealed with wax cappings.
+                A frame of honey sealed with wax cappings, before extraction.
               </figcaption>
             </figure>
           </div>
@@ -115,7 +115,7 @@ export default function Products() {
         >
           <div>
             <p className='mb-3 text-xs uppercase tracking-[0.18em] text-muted'>
-              02 / A beeswax favorite
+              02 / Beeswax and honey
             </p>
             <h2
               id='cream-heading'
@@ -174,11 +174,9 @@ export default function Products() {
       </div>
       <aside className='mb-8 flex flex-col justify-between gap-4 border-y border-line py-6 sm:mb-12 sm:flex-row sm:items-center'>
         <div>
-          <h2 className='font-serif text-2xl'>
-            A little something from our hives.
-          </h2>
+          <h2 className='font-serif text-2xl'>Prices and availability.</h2>
           <p className='mt-2 text-sm leading-7 text-muted'>
-            See current prices and availability in the shop.
+            Check the shop for current stock and ordering options.
           </p>
         </div>
         <a href='/buyonline' className='shop-link self-start sm:self-auto'>

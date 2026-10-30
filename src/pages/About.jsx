@@ -23,8 +23,8 @@ export default function About() {
         </h1>
         <div className='mx-auto my-6 h-px w-12 bg-honey' aria-hidden='true' />
         <p className='text-base leading-8 text-muted sm:text-lg'>
-          Two small hives in 2014. A family connection to bees. And a curiosity
-          about just how different honey can taste.
+          I started with two small hives in 2014, a family connection to
+          beekeeping, and an interest in the different flavors of honey.
         </p>
       </section>
 
@@ -43,18 +43,17 @@ export default function About() {
             Hi, I&apos;m Geff Ivey.
           </h2>
           <p className='mt-3 font-serif text-xl text-muted'>
-            Software developer by day. Hobby beekeeper, too.
+            Software developer and hobby beekeeper.
           </p>
           <div className='mt-6 space-y-4 text-base leading-8 text-muted'>
             <p>
-              I&apos;m the head beekeeper here at Berry Hill Bees. I&apos;m also
-              the only beekeeper here, so the competition for that title
-              wasn&apos;t too fierce.
+              I&apos;m the head beekeeper at Berry Hill Bees—and the only
+              beekeeper, which simplifies the org chart.
             </p>
             <p>
-              My day job is software development, and beekeeping is my hobby.
-              Berry Hill Bees is a small, personal operation, and I enjoy caring
-              for the bees and sharing the honey they make.
+              My day job is software development. Berry Hill Bees is a small
+              hobby apiary where I care for the colonies and share the honey
+              they produce.
             </p>
           </div>
         </div>
@@ -67,7 +66,7 @@ export default function About() {
             className='h-auto w-full rounded-sm'
           />
           <figcaption className='border-b border-line py-3 text-xs leading-6 text-muted'>
-            The head beekeeper, with a little help from the bees.
+            Geff Ivey at the apiary.
           </figcaption>
         </figure>
       </section>

@@ -106,7 +106,7 @@ export default function BuyOnline() {
     <>
       <section aria-labelledby='shop-heading' className='page-intro'>
         <p className='mb-4 text-xs font-medium uppercase tracking-[0.2em] text-muted'>
-          From our hives to your home
+          Shop Berry Hill Bees
         </p>
         <div className='flex flex-col justify-between gap-6 sm:flex-row sm:items-end'>
           <div className='max-w-2xl'>
@@ -114,11 +114,11 @@ export default function BuyOnline() {
               id='shop-heading'
               className='font-serif text-4xl leading-tight tracking-tight sm:text-5xl lg:text-6xl'
             >
-              A little sweetness, online.
+              Buy online.
             </h1>
             <p className='mt-6 text-base leading-8 text-muted'>
-              Choose your favorites below. Add items to your PayPal cart, then
-              review your order and complete payment there.
+              Select products below. Add items to your PayPal cart, then review
+              your order and complete payment there.
             </p>
           </div>
           <PayPalForm>
@@ -165,7 +165,7 @@ export default function BuyOnline() {
           </p>
         </div>
         <div>
-          <h2 className='font-serif text-2xl'>A small favor for our planet.</h2>
+          <h2 className='font-serif text-2xl'>Reuse or recycle your jars.</h2>
           <p className='mt-3 text-sm leading-7 text-muted'>
             Please reuse or recycle your empty honey jars. Prefer to shop in
             person?{' '}

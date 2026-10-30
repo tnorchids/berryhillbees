@@ -17,6 +17,6 @@ export const updates = [
     showFrom: '2026-08-16',
     showUntil: null,
     text: 'The bees had a productive honey season this year. The taste is exceptional! It’s back in stock at both Kirby Plants and Three Rivers Market.',
-    link: { label: 'Buy locally', href: '/wheretobuy' }
+    link: { label: 'Local Retailers', href: '/wheretobuy' }
   }
 ];

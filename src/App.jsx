@@ -2,7 +2,7 @@ import { useRef, useState } from 'react';
 import logo from './assets/bhbheader.png';
 import Home from './pages/Home.jsx';
 import Products from './pages/Products.jsx';
-import BuyLocally from './pages/BuyLocally.jsx';
+import LocalRetailers from './pages/LocalRetailers.jsx';
 import About from './pages/About.jsx';
 import BuyOnline from './pages/BuyOnline.jsx';
 import Bees from './pages/Bees.jsx';
@@ -17,7 +17,7 @@ const pages = [
   { path: '/', label: 'Home', component: Home },
   { path: '/bees', label: 'Our Bees', component: Bees },
   { path: '/products', label: 'Products', component: Products },
-  { path: '/wheretobuy', label: 'Buy Locally', component: BuyLocally },
+  { path: '/wheretobuy', label: 'Local Retailers', component: LocalRetailers },
   { path: '/buyonline', label: 'Buy Online', component: BuyOnline },
   { path: '/about', label: 'About', component: About },
   { path: '/updates', label: 'Updates', component: Updates },
@@ -96,10 +96,22 @@ function Footer() {
       <div className='mx-auto flex max-w-6xl flex-col gap-6 py-8 sm:flex-row sm:items-center sm:justify-between sm:py-10'>
         <div>
           <div className='mb-4 h-0.5 w-10 bg-honey' aria-hidden='true' />
-          <a href='/' className='font-serif text-2xl tracking-tight text-ink'>
-            Berry Hill Bees
+          <a
+            href='/'
+            aria-label='Berry Hill Bees home'
+            className='inline-block rounded-sm'
+          >
+            <img
+              src={logo}
+              alt='Berry Hill Bees'
+              width='360'
+              height='70'
+              loading='lazy'
+              decoding='async'
+              className='h-auto w-48 sm:w-52'
+            />
           </a>
-          <p className='mt-1 text-xs leading-6 text-muted'>
+          <p className='mt-2 text-xs leading-6 text-muted'>
             A small apiary in Solway · Knoxville, Tennessee.
           </p>
         </div>

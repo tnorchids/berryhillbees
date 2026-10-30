@@ -17,8 +17,9 @@ const locations = [
       'One Pound Honey in Flip Top Jars',
       'One Pound Honey in Decorative Muth Jars'
     ]
-  },
-  {
+  }
+  /* Temporarily not selling here. Keep the entry for possible reinstatement.
+  , {
     name: 'Visit Knoxville, Visitor Center',
     link: 'https://g.page/visitknoxville?share',
     address: '301 S. Gay Street',
@@ -26,9 +27,10 @@ const locations = [
     phone: '(865) 523-7263',
     products: ['One Pound Honey in Decorative Muth Jars']
   }
+  */
 ];
 
-export default function BuyLocally() {
+export default function LocalRetailers() {
   return (
     <>
       <section
@@ -42,7 +44,7 @@ export default function BuyLocally() {
           id='where-heading'
           className='font-serif text-4xl leading-tight tracking-tight sm:text-5xl lg:text-6xl'
         >
-          Buy locally.
+          Local retailers.
         </h1>
         <div className='mx-auto my-6 h-px w-12 bg-honey' aria-hidden='true' />
         <p className='text-base leading-8 text-muted sm:text-lg'>
@@ -52,7 +54,7 @@ export default function BuyLocally() {
 
       <section
         aria-label='Retail locations'
-        className='grid gap-5 pb-10 md:grid-cols-3 md:gap-6'
+        className='grid gap-5 pb-10 md:grid-cols-2 md:gap-6'
       >
         {locations.map((location) => (
           <article

@@ -6,13 +6,13 @@ export default function ThankYou() {
     >
       <p className='mb-5 flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-muted'>
         <span className='h-px w-7 bg-honey' aria-hidden='true' />
-        From all of us at Berry Hill Bees
+        Berry Hill Bees
       </p>
       <h1
         id='thank-you-heading'
         className='font-serif text-4xl leading-tight tracking-tight sm:text-5xl lg:text-6xl'
       >
-        Thank you for supporting our little apiary.
+        Thank you for your order.
       </h1>
       <div className='my-7 h-px w-12 bg-honey' aria-hidden='true' />
       <p className='text-lg leading-8 text-muted'>
